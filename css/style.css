@@ -39,9 +39,12 @@ a {
 /* Header Styles */
 
 .site-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .site-header .container {
@@ -50,23 +53,38 @@ a {
     align-items: center;
 }
 
-.site-header .logo {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 24px;
     font-weight: bold;
+    color: #0077cc;
+}
+
+.logo-img {
+    height: 75px;
+    width: 75px;
 }
 
 .nav {
     display: flex;
+    gap: 25px;
 }
 
 .nav-link {
-    margin-left: 20px;
-    color: #fff;
-    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.nav-link:hover {
-    color: #00bcd4;
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #0077cc;
+    color: #fff;
 }
 
 
